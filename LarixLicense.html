@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Larix Brand License Agreement</title>
+<link rel="icon" type="image/svg+xml" href="https://i.postimg.cc/8P0YSXLn/Larix-License-Logo.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --blue: #023E8A;
+    --blue-deep: #012a5e;
+    --red: #FF0000;
+    --paper: #FBFAF7;
+    --ink: #1A1D22;
+    --ink-soft: #4A4F58;
+    --rule: #D8DCE3;
+    --pixel: 'Press Start 2P', 'Courier New', monospace;
+    --block: 6px;
+  }
+
+  * { box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    margin: 0;
+    background:
+      repeating-linear-gradient(0deg, rgba(2,62,138,0.035) 0 var(--block), transparent var(--block) calc(var(--block) * 2)),
+      repeating-linear-gradient(90deg, rgba(2,62,138,0.035) 0 var(--block), transparent var(--block) calc(var(--block) * 2)),
+      var(--paper);
+    color: var(--ink);
+    font-family: 'Georgia', 'Iowan Old Style', 'Palatino Linotype', serif;
+    line-height: 1.65;
+  }
+
+  /* ---------- Cover / masthead ---------- */
+  .masthead {
+    position: relative;
+    background: linear-gradient(160deg, var(--blue) 0%, var(--blue-deep) 78%);
+    color: #EAF1FB;
+    padding: 5.5rem 2rem 4rem;
+    overflow: hidden;
+  }
+
+  .masthead::after {
+    content: "";
+    position: absolute;
+    right: -4%;
+    top: -18%;
+    width: 260px;
+    height: 260px;
+    background:
+      conic-gradient(from 45deg,
+        #7ED0FF 0 25%, #4FB3E8 25% 50%, #2E86D8 50% 75%, #1F5FB0 75% 100%);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    opacity: 0.5;
+  }
+
+  .masthead::before {
+    content: "";
+    position: absolute;
+    left: 0; right: 0; bottom: 0;
+    height: var(--block);
+    background: repeating-linear-gradient(90deg, var(--red) 0 12px, #C40000 12px 24px);
+  }
+
+  .masthead-inner {
+    position: relative;
+    max-width: 760px;
+    margin: 0 auto;
+  }
+
+  .eyebrow {
+    font-family: var(--pixel);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 0.62rem;
+    color: #FF5A5A;
+    font-weight: 400;
+    margin: 0 0 1.4rem;
+  }
+
+  .masthead h1 {
+    font-family: var(--pixel);
+    font-size: clamp(1.15rem, 3.6vw, 1.9rem);
+    margin: 0 0 1rem;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 1.6;
+    text-shadow: 3px 3px 0 rgba(1,42,94,0.55);
+  }
+
+  .masthead h1 em {
+    font-style: normal;
+    color: #FF5A5A;
+  }
+
+  .masthead p.dek {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 0.98rem;
+    color: #C7D6EC;
+    max-width: 46ch;
+    margin: 0 0 2.2rem;
+  }
+
+  .party-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3px;
+    background: rgba(255,255,255,0.18);
+    border: 3px solid rgba(255,255,255,0.18);
+    border-radius: 0;
+    box-shadow: inset 0 0 0 3px rgba(0,0,0,0.15);
+    overflow: hidden;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+  }
+
+  .party-card {
+    background: rgba(255,255,255,0.05);
+    padding: 1.1rem 1.3rem;
+  }
+
+  .party-card .label {
+    text-transform: uppercase;
+    font-size: 0.66rem;
+    letter-spacing: 0.14em;
+    color: #FF8A8A;
+    font-weight: 700;
+    margin-bottom: 0.35rem;
+  }
+
+  .party-card .value {
+    font-size: 0.95rem;
+    color: #EDF3FC;
+  }
+
+  .party-card .sub {
+    font-size: 0.82rem;
+    color: #A9BEDA;
+    margin-top: 0.15rem;
+  }
+
+  @media (max-width: 560px) {
+    .party-cards { grid-template-columns: 1fr; }
+  }
+
+  /* ---------- Table of contents ---------- */
+  .toc {
+    max-width: 760px;
+    margin: -2.4rem auto 0;
+    position: relative;
+    background: #fff;
+    border: 3px solid var(--blue);
+    border-radius: 0;
+    padding: 1.6rem 1.8rem;
+    box-shadow: 0 18px 40px -22px rgba(2,62,138,0.35), inset 0 0 0 3px rgba(2,62,138,0.08);
+  }
+
+  .toc h2 {
+    font-family: var(--pixel);
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--blue);
+    margin: 0 0 1.1rem;
+    font-weight: 400;
+  }
+
+  .toc ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.35rem 1.5rem;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 0.87rem;
+  }
+
+  @media (max-width: 560px) {
+    .toc ol { grid-template-columns: 1fr; }
+    .toc { margin-top: -1.6rem; padding: 1.3rem 1.2rem; }
+  }
+
+  .toc a {
+    color: var(--ink-soft);
+    text-decoration: none;
+    display: flex;
+    gap: 0.55rem;
+    padding: 0.2rem 0;
+    border-bottom: 1px dotted transparent;
+    transition: color 0.15s ease, border-color 0.15s ease;
+  }
+
+  .toc a:hover, .toc a:focus-visible {
+    color: var(--red);
+    border-color: var(--red);
+  }
+
+  .toc a .num {
+    color: var(--blue);
+    font-weight: 700;
+    min-width: 1.3rem;
+  }
+
+  /* ---------- Body ---------- */
+  main {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 3.2rem 2rem 5rem;
+  }
+
+  section {
+    margin-bottom: 2.8rem;
+    scroll-margin-top: 1.5rem;
+  }
+
+  section + section {
+    border-top: none;
+    padding-top: 2.6rem;
+    position: relative;
+  }
+
+  section + section::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 6px;
+    background: repeating-linear-gradient(90deg, var(--rule) 0 8px, transparent 8px 16px);
+  }
+
+  .section-head {
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+    margin-bottom: 1.1rem;
+  }
+
+  .section-num {
+    font-family: var(--pixel);
+    font-weight: 400;
+    font-size: 0.72rem;
+    color: #fff;
+    background: var(--red);
+    border-radius: 0;
+    padding: 0.5rem 0.6rem;
+    line-height: 1;
+    letter-spacing: 0;
+    flex-shrink: 0;
+    box-shadow:
+      inset 2px 2px 0 rgba(255,255,255,0.45),
+      inset -2px -2px 0 rgba(0,0,0,0.35);
+  }
+
+  h2.title {
+    font-family: var(--pixel);
+    font-size: 0.95rem;
+    font-weight: 400;
+    color: var(--blue-deep);
+    margin: 0;
+    letter-spacing: 0.01em;
+    line-height: 1.5;
+  }
+
+  .clause {
+    margin: 0 0 0.95rem;
+    color: var(--ink);
+  }
+
+  .clause:last-child { margin-bottom: 0; }
+
+  .clause .ref {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: var(--blue);
+    font-weight: 700;
+    font-size: 0.85rem;
+    margin-right: 0.4rem;
+  }
+
+  .clause ul, .clause ol.lettered {
+    margin: 0.5rem 0 0.5rem 1.4rem;
+    padding: 0;
+  }
+
+  .clause li { margin-bottom: 0.35rem; }
+
+  .placeholder {
+    background: #FFF3F3;
+    border: 1px dashed #FF9B9B;
+    color: #B00000;
+    padding: 0.15rem 0.5rem;
+    border-radius: 5px;
+    font-family: 'Courier New', monospace;
+    font-size: 0.86em;
+    white-space: pre-wrap;
+  }
+
+  blockquote.example {
+    margin: 0.7rem 0 0;
+    padding: 0.9rem 1.1rem;
+    background: #F1F6FC;
+    border-left: 3px solid var(--blue);
+    font-size: 0.94rem;
+    color: var(--ink-soft);
+    border-radius: 0 6px 6px 0;
+  }
+
+  .signatures {
+    margin-top: 3rem;
+    padding-top: 2.4rem;
+    border-top: 1px solid var(--rule);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  @media (max-width: 560px) {
+    .signatures { grid-template-columns: 1fr; }
+  }
+
+  .sig-block .who {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 0.66rem;
+    letter-spacing: 0.14em;
+    color: var(--red);
+    font-weight: 700;
+    margin-bottom: 1.6rem;
+  }
+
+  .sig-line {
+    border-bottom: 1px solid var(--ink);
+    height: 2.4rem;
+    margin-bottom: 0.4rem;
+  }
+
+  .sig-caption {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 0.78rem;
+    color: var(--ink-soft);
+  }
+
+  footer.doc-footer {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 2rem 3.5rem;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 0.8rem;
+    color: var(--ink-soft);
+    font-style: italic;
+  }
+
+  footer.doc-footer p {
+    padding: 1rem 1.2rem;
+    background: #FFF8F8;
+    border: 1px solid #FFD6D6;
+    border-radius: 8px;
+  }
+
+  ::selection { background: rgba(255,0,0,0.18); }
+
+  a.back-to-top {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--blue);
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 1.2rem;
+  }
+  a.back-to-top:hover { color: var(--red); }
+
+  @media print {
+    .masthead::after { display: none; }
+    a.back-to-top { display: none; }
+    section + section { break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="masthead-inner">
+    <p class="eyebrow">Brand License Agreement</p>
+    <h1>Larix <em>Marks</em> &amp; Identity</h1>
+    <p class="dek">Governs third-party use of the Larix name, logos, and associated marks in connection with its Minecraft: Bedrock Edition network and community.</p>
+    <div class="party-cards">
+      <div class="party-card">
+        <div class="label">Licensor</div>
+        <div class="value">Larix Network</div>
+        <div class="sub">Founded 21 March 2023 · Owned by Blake &amp; Charlotte</div>
+      </div>
+      <div class="party-card">
+        <div class="label">Licensee</div>
+        <div class="value"><span class="placeholder">EXCALIBUR-ENTERPRISES</span></div>
+        <div class="sub"><span class="placeholder">EUROPA COURT, TINSLEY, SHEFFIELD, GB</span></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<nav class="toc" aria-label="Table of contents">
+  <h2>Contents</h2>
+  <ol>
+    <li><a href="#s1"><span class="num">1</span> Background</a></li>
+    <li><a href="#s2"><span class="num">2</span> Grant of License</a></li>
+    <li><a href="#s3"><span class="num">3</span> Ownership</a></li>
+    <li><a href="#s4"><span class="num">4</span> Quality Control &amp; Guidelines</a></li>
+    <li><a href="#s5"><span class="num">5</span> Conduct &amp; Community Standards</a></li>
+    <li><a href="#s6"><span class="num">6</span> Fees</a></li>
+    <li><a href="#s7"><span class="num">7</span> Term</a></li>
+    <li><a href="#s8"><span class="num">8</span> Termination</a></li>
+    <li><a href="#s9"><span class="num">9</span> No Warranty</a></li>
+    <li><a href="#s10"><span class="num">10</span> Indemnification</a></li>
+    <li><a href="#s11"><span class="num">11</span> Limitation of Liability</a></li>
+    <li><a href="#s12"><span class="num">12</span> General Provisions</a></li>
+  </ol>
+</nav>
+
+<main>
+
+  <section id="s1">
+    <div class="section-head"><span class="section-num">01</span><h2 class="title">Background</h2></div>
+    <p class="clause"><span class="ref">1.1</span>Larix owns certain names, logos, wordmarks, taglines, color schemes, server branding, and other identifying marks (collectively, the "Larix Marks") used in connection with its Minecraft Bedrock&ndash;related network, servers, and community. Larix was founded on 21 March 2023.</p>
+    <p class="clause"><span class="ref">1.2</span>Licensee wishes to use the Larix Marks for the purpose described in Section 2 (the "Permitted Use"), and Larix is willing to grant such rights subject to the terms of this Agreement.</p>
+    <p class="clause"><span class="ref">1.3</span>This Agreement governs branding use only. It does not transfer ownership of, or grant rights to, any Mojang/Microsoft "Minecraft" trademarks, assets, or intellectual property. Licensee's use of the Minecraft name and assets remains subject to the official Minecraft Usage Guidelines, and nothing in this Agreement authorizes Licensee to exceed those guidelines.</p>
+  </section>
+
+  <section id="s2">
+    <div class="section-head"><span class="section-num">02</span><h2 class="title">Grant of License</h2></div>
+    <p class="clause"><span class="ref">2.1</span><strong>Scope.</strong> Subject to Licensee's compliance with this Agreement, Larix grants Licensee a limited, non-exclusive, non-transferable, revocable license to use the Larix Marks solely for the following Permitted Use:</p>
+    <blockquote class="example"><span class="placeholder">Operating an affiliated Minecraft: Bedrock Edition server under the Larix name in accordance with this Agreement.</span></blockquote>
+    <p class="clause" style="margin-top:1rem;"><span class="ref">2.2</span><strong>Territory.</strong> This license applies <span class="placeholder">worldwide</span>.</p>
+    <p class="clause"><span class="ref">2.3</span><strong>Non-Exclusivity.</strong> This license is non-exclusive. Larix may grant similar licenses to other parties and may use the Larix Marks itself without restriction.</p>
+    <p class="clause"><span class="ref">2.4</span><strong>No Sublicensing.</strong> Licensee may not sublicense, assign, or transfer any rights granted under this Agreement without Larix's prior written consent.</p>
+  </section>
+
+  <section id="s3">
+    <div class="section-head"><span class="section-num">03</span><h2 class="title">Ownership</h2></div>
+    <p class="clause"><span class="ref">3.1</span>Larix, and its founders and owners Blake and Charlotte, retain all right, title, and interest in and to the Larix Marks, including all associated goodwill. Nothing in this Agreement transfers ownership of the Larix Marks to Licensee.</p>
+    <p class="clause"><span class="ref">3.2</span>Any goodwill generated by Licensee's use of the Larix Marks shall inure solely to the benefit of Larix.</p>
+    <p class="clause"><span class="ref">3.3</span>Licensee shall not register, or attempt to register, any trademark, domain name, or social media handle that is confusingly similar to the Larix Marks.</p>
+  </section>
+
+  <section id="s4">
+    <div class="section-head"><span class="section-num">04</span><h2 class="title">Quality Control &amp; Brand Guidelines</h2></div>
+    <p class="clause"><span class="ref">4.1</span>Licensee shall use the Larix Marks only in the form and manner approved by Larix, including any brand guidelines, logo files, color specifications, or style guides provided by Larix from time to time ("Brand Guidelines").</p>
+    <p class="clause"><span class="ref">4.2</span>Licensee shall not alter, distort, or combine the Larix Marks with other marks without prior written approval.</p>
+    <p class="clause"><span class="ref">4.3</span>Larix reserves the right to review Licensee's use of the Larix Marks and to request reasonable modifications to ensure consistency with the Network's reputation and quality standards.</p>
+    <p class="clause"><span class="ref">4.4</span>Licensee shall not use the Larix Marks in a manner that is misleading, defamatory, illegal, or that could damage the reputation of Larix or the broader Minecraft community.</p>
+  </section>
+
+  <section id="s5">
+    <div class="section-head"><span class="section-num">05</span><h2 class="title">Conduct &amp; Community Standards</h2></div>
+    <p class="clause"><span class="ref">5.1</span>Licensee agrees to operate any Larix-branded server, channel, or community in accordance with:</p>
+    <ol class="lettered clause">
+      <li>(a) Mojang/Microsoft's Minecraft Usage Guidelines and End User License Agreement;</li>
+      <li>(b) Larix's own community rules and code of conduct; and</li>
+      <li>(c) all applicable laws, including those relating to consumer protection, gambling (e.g., loot boxes/gambling-style mechanics), and data privacy.</li>
+    </ol>
+    <p class="clause"><span class="ref">5.2</span>Licensee shall not engage in conduct that could expose Larix to legal liability, including but not limited to unauthorized monetization schemes, sale of unauthorized in-game advantages in violation of Mojang/Microsoft policy, or infringing use of third-party content.</p>
+  </section>
+
+  <section id="s6">
+    <div class="section-head"><span class="section-num">06</span><h2 class="title">Fees</h2></div>
+    <p class="clause"><span class="ref">6.1</span><span class="placeholder">This license is granted at no cost. on a [monthly/quarterly] basis."]</span></p>
+  </section>
+
+  <section id="s7">
+    <div class="section-head"><span class="section-num">07</span><h2 class="title">Term</h2></div>
+    <p class="clause"><span class="ref">7.1</span>This Agreement begins on the Effective Date and continues until terminated in accordance with Section 8 (the "Term").</p>
+    <p class="clause"><span class="ref">7.2</span><span class="placeholder">This Agreement remains in effect until terminated under Section 8., renewing automatically for successive [12-month] periods unless terminated."]</span></p>
+  </section>
+
+  <section id="s8">
+    <div class="section-head"><span class="section-num">08</span><h2 class="title">Termination</h2></div>
+    <p class="clause"><span class="ref">8.1</span><strong>Termination for Convenience.</strong> Larix may terminate this Agreement at any time, with or without cause, upon <span class="placeholder">14</span> days' written notice to Licensee.</p>
+    <p class="clause"><span class="ref">8.2</span><strong>Termination for Breach.</strong> Either Party may terminate this Agreement immediately upon written notice if the other Party materially breaches this Agreement and fails to cure such breach within <span class="placeholder">10</span> days of receiving notice.</p>
+    <p class="clause"><span class="ref">8.3</span><strong>Effect of Termination.</strong> Upon termination, Licensee shall:</p>
+    <ol class="lettered clause">
+      <li>(a) immediately cease all use of the Larix Marks;</li>
+      <li>(b) remove or take down any branded materials, server names, logos, or content bearing the Larix Marks within <span class="placeholder">7</span> days; and</li>
+      <li>(c) not represent itself as affiliated with, sponsored by, or endorsed by Larix thereafter.</li>
+    </ol>
+  </section>
+
+  <section id="s9">
+    <div class="section-head"><span class="section-num">09</span><h2 class="title">No Warranty</h2></div>
+    <p class="clause"><span class="ref">9.1</span>The Larix Marks are provided "as is." Larix makes no warranties, express or implied, regarding the Larix Marks, including any warranty of merchantability, fitness for a particular purpose, or non-infringement.</p>
+  </section>
+
+  <section id="s10">
+    <div class="section-head"><span class="section-num">10</span><h2 class="title">Indemnification</h2></div>
+    <p class="clause"><span class="ref">10.1</span>Licensee agrees to indemnify and hold harmless Larix, its owners, staff, and affiliates from any claims, damages, losses, or expenses (including reasonable legal fees) arising out of Licensee's use of the Larix Marks, breach of this Agreement, or violation of applicable law or third-party rights (including Mojang/Microsoft's Minecraft Usage Guidelines).</p>
+  </section>
+
+  <section id="s11">
+    <div class="section-head"><span class="section-num">11</span><h2 class="title">Limitation of Liability</h2></div>
+    <p class="clause"><span class="ref">11.1</span>To the maximum extent permitted by law, Larix shall not be liable for any indirect, incidental, special, or consequential damages arising from this Agreement or Licensee's use of the Larix Marks.</p>
+  </section>
+
+  <section id="s12">
+    <div class="section-head"><span class="section-num">12</span><h2 class="title">General Provisions</h2></div>
+    <p class="clause"><span class="ref">12.1</span><strong>Independent Parties.</strong> Nothing in this Agreement creates a partnership, joint venture, agency, or employment relationship between the Parties.</p>
+    <p class="clause"><span class="ref">12.2</span><strong>Governing Law.</strong> This Agreement shall be governed by and construed in accordance with the laws of <span class="placeholder">England and Wales</span>, without regard to conflict-of-law principles.</p>
+    <p class="clause"><span class="ref">12.3</span><strong>Entire Agreement.</strong> This Agreement constitutes the entire agreement between the Parties regarding the subject matter herein and supersedes any prior agreements or understandings.</p>
+    <p class="clause"><span class="ref">12.4</span><strong>Amendments.</strong> This Agreement may only be amended in writing signed by both Parties.</p>
+    <p class="clause"><span class="ref">12.5</span><strong>Severability.</strong> If any provision of this Agreement is found unenforceable, the remaining provisions shall continue in full force and effect.</p>
+    <p class="clause"><span class="ref">12.6</span><strong>Notices.</strong> All notices under this Agreement shall be sent to the addresses/contact details listed above, or such other address as either Party designates in writing.</p>
+
+    <a class="back-to-top" href="#s1">↑ Back to top</a>
+  </section>
+
+</main>
+</body>
+</html>
